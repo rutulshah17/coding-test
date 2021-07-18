@@ -2,22 +2,28 @@
 
 > git clone https://github.com/rutulshah17/coding-test.git
 
+## SERVER
+```
 > cd ./server
 > npm install
 > npm start
 > npm test => to run unit tests
-
+```
 Below are the access-able API Endpoints
-/
-/api/cats
-/api/sharks
-/api/both
+```
+> /
+> /api/cats
+> /api/sharks
+> /api/both
+```
 
+## CLIENT
+
+```
 > cd client
 > npm install
 > npm start
-
-
+```
 
 
 

@@ -4,7 +4,7 @@
 
 ## SERVER
 ```
-> cd ./server
+> cd server
 > npm install
 > npm start
 > npm test => to run unit tests
@@ -20,7 +20,7 @@ Below are the access-able API Endpoints
 ## CLIENT
 
 ```
-> cd client
+> cd ./client
 > npm install
 > npm start
 ```

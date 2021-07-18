@@ -2,11 +2,14 @@
 
 > git clone https://github.com/rutulshah17/coding-test.git
 
+> cd coding-test
+
+
 ## SERVER
 ```
 > cd server
 > npm install
-> npm start
+> npm start => server should run on PORT 5000
 > npm test => to run unit tests
 ```
 Below are the access-able API Endpoints

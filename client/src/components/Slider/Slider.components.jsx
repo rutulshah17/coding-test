@@ -5,10 +5,10 @@ import { ToggleButtonGroup, ToggleButton } from '@material-ui/lab';
 
 import { fetchCats, fetchSharks, fetchCatsAndSharks } from '../../api/app.api';
 
-import Cats from './Cats/Cats.components';
-import Sharks from './Sharks/Sharks.components';
-import CatsAndSharks from './CatsAndSharks/CatsAndSharks.components';
-import Loader from './Loader/Loader.component';
+import Cats from '../Cats/Cats.components';
+import Sharks from '../Sharks/Sharks.components';
+import CatsAndSharks from '../CatsAndSharks/CatsAndSharks.components';
+import Loader from '../Loader/Loader.component';
 
 import './Slider.styles.css'
 

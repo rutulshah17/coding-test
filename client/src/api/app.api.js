@@ -14,8 +14,8 @@ export const fetchSharks = async () => {
     return sharks;
 }
 
-export const fetchBoth = async () => {
+export const fetchCatsAndSharks = async () => {
     const { data } = await axios.get(`${DEFAULT_URL}/both`);
-    const both = data.split(",");
-    return both;
+    const catsAndSharks = data.split(",");
+    return catsAndSharks;
 }

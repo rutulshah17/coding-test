@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { Container, Box, Typography } from '@material-ui/core';
-import { ToggleButtonGroup, ToggleButton } from '@material-ui/lab';
+import { Container } from '@material-ui/core';
 
 import { fetchCats, fetchSharks, fetchCatsAndSharks } from './api/app.api';
 
@@ -9,6 +8,7 @@ import Cats from './components/Cats/Cats.components';
 import Sharks from './components/Sharks/Sharks.components';
 import CatsAndSharks from './components/CatsAndSharks/CatsAndSharks.components';
 import Loader from './components/Loader/Loader.component';
+import Buttons from './components/Buttons/Buttons.component';
 
 import './App.css';
 
@@ -49,17 +49,12 @@ class App extends React.Component {
         return (
 
                 <Container disableGutters={true}>
-                    <Box>
-                        <ToggleButtonGroup className='app-toggle-button' >
-                            <ToggleButton selected={this.state.catsButton} onClick={this.handleCats} value='Cats'> 
-                                <Typography color='primary' variant='h5'> Cats </Typography> 
-                            </ToggleButton>
-                            
-                            <ToggleButton selected={this.state.sharksButton} onClick={this.handleSharks} value='Sharks'> 
-                                <Typography color='primary' variant='h5'> Sharks </Typography> 
-                            </ToggleButton>
-                        </ToggleButtonGroup>
-                    </Box>
+                    <Buttons 
+                        catsButton={catsButton} 
+                        sharksButton={sharksButton} 
+                        clickCat={this.handleCats} 
+                        clickShark={this.handleSharks} 
+                    />
                     
                     {
                         //show loader if waiting on data from API

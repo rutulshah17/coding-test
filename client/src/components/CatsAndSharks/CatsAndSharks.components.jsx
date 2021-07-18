@@ -9,10 +9,9 @@ const CatsAndSharks = ({catsAndSharks}) => {
     return (
         <Carousel>
             {
-                catsAndSharks.map( (data) => (
-                    <SlideShow key={data} data={data} cats='cats'/>
-                    )
-                )
+                catsAndSharks.map( (data, index) => (
+                    <SlideShow key={index} data={data} cats='cats'/>
+                ))
             }
         </Carousel>
     )

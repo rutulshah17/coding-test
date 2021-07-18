@@ -1,10 +1,10 @@
 import React from 'react';
 import { Paper } from '@material-ui/core';
 
-const SlideShow = (props) => {
+const SlideShow = ({data}) => {
     return (
         <Paper>
-            <img className='slideShow-image' src={props.data} alt='' />
+            <img className='slideShow-image' src={data} alt='' />
         </Paper>
     )
 };

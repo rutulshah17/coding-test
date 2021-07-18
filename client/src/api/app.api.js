@@ -4,18 +4,15 @@ const DEFAULT_URL = "http://localhost:5000/api";
 
 export const fetchCats = async () => {
     const { data } = await axios.get(`${DEFAULT_URL}/cats`);
-    const cats = data.split(",");
-    return cats;
+    return data;
 }
 
 export const fetchSharks = async () => {
     const { data } = await axios.get(`${DEFAULT_URL}/sharks`);
-    const sharks = data.split(",");
-    return sharks;
+    return data;
 }
 
 export const fetchCatsAndSharks = async () => {
     const { data } = await axios.get(`${DEFAULT_URL}/both`);
-    const catsAndSharks = data.split(",");
-    return catsAndSharks;
+    return data;
 }

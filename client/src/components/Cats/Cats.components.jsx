@@ -5,13 +5,12 @@ import SlideShow from '../SlideShow/SlideShow.component';
 import './Cats.styles.css';
 
 const Cats = ({cats}) => {
-    return (
+   return (
         <Carousel>
             {
-                cats.map( (data) => (
-                    <SlideShow key={data} data={data} cats='cats'/>
-                )
-                )
+                cats.map( (data, index) => (
+                    <SlideShow key={index} data={data} cats='cats'/>
+                ))
             }
         </Carousel>
     )

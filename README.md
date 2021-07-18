@@ -1,3 +1,26 @@
+# Steps to run this project
+
+> git clone https://github.com/rutulshah17/coding-test.git
+
+> cd ./server
+> npm install
+> npm start
+> npm test => to run unit tests
+
+Below are the access-able API Endpoints
+/
+/api/cats
+/api/sharks
+/api/both
+
+> cd client
+> npm install
+> npm start
+
+
+
+
+
 # Ownr Developer Candidate Coding Test
 
 Congratulations, you have been asked to complete our Full Stack candidate proficiency test! 

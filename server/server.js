@@ -7,12 +7,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const PORT = 5000;
 
+app.use( '/api', apiRoutes );
+
+const PORT = 5000;
 app.listen( PORT, () => console.log( `Server is running on port ${PORT}` ) );
 
 app.get('/', (req,res) => {
-    res.send('Welcome to Ownr Developer Candidate Coding Test')
+    res.status(200).json({"success": 'Welcome to Ownr Developer Candidate Coding Test'});
 });
 
-app.use( '/api', apiRoutes );
+export default app;

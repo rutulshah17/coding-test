@@ -12,7 +12,7 @@
 > npm start => server should run on PORT 5000
 > npm test => to run unit tests
 ```
-Below are the access-able API Endpoints
+Below are the accessible API Endpoints
 ```
 > /
 > /api/cats
